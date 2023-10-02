@@ -1,19 +1,24 @@
 plugins {
-    id("java")
+  id("java")
+}
+
+java {
+  sourceCompatibility = JavaVersion.VERSION_17
+  targetCompatibility = JavaVersion.VERSION_17
 }
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+  testImplementation(platform("org.junit:junit-bom:5.9.1"))
+  testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 tasks.test {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
