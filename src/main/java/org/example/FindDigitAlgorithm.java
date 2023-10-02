@@ -1,8 +1,8 @@
 package org.example;
 
-public class Destructor {
+public class FindDigitAlgorithm {
 
-  public int destruct(int n) {
+  public int findDigitAt(int n) {
     if (n < 1) {
       return -1;
     }
